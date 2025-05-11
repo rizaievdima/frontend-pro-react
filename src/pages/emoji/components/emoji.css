@@ -1,0 +1,78 @@
+.emoji-vote-container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.emoji-vote__title {
+    text-align: center;
+}
+
+.emojis-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emoji-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.emoji-card:hover {
+    background-color: #f0f0f0;
+}
+
+.emoji-card__emoji {
+    font-size: 52px;
+    margin: 0px;
+}
+
+.emoji-card__vote {
+    font-size: 20px;
+    margin: 10px;
+}
+.vote-controllers {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.vote-controllers__button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.vote-controllers__button:hover {
+    background-color: #9b9b9b;
+}
+.vote-controllers__button--find-winner {
+    background-color: #4caf50;
+    color: white;
+}
+.vote-controllers__button--reset-votes {
+    background-color: #5796fc;
+    color: white;
+}
+.vote-results {
+    margin-top: 20px;
+}
+.vote-results__winner {
+    font-size: 20px;
+    margin: 10px;
+}
+.vote-results__winner span {
+    font-size: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.vote-results__vote {
+    font-size: 20px;
+    margin: 10px;
+}

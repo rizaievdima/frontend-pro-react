@@ -1,11 +1,7 @@
-import FirstComponent from "./components/FirstComponent";
+import Emoji from "./pages/emoji";
 
 function App() {
-    return (
-        <div className="App">
-            <FirstComponent />
-        </div>
-    );
+    return <Emoji />;
 }
 
 export default App;
