@@ -1,4 +1,7 @@
-const EmojiCard = ({ emoji, addVote }) => {
+import { useEmojiContext } from "../../../contexts/EmojiContext";
+
+const EmojiCard = ({ emoji }) => {
+    const { addVote } = useEmojiContext();
     const handleVote = () => {
         addVote(emoji.id);
     };

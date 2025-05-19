@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #000000;
+}
+
+.mode-light {
+    color: #000000;
+    background-color: #cacaca;
+}
+
+.mode-dark {
+    color: #ffffff;
+    background-color: #04015f;
+}

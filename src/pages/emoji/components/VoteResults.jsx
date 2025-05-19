@@ -1,4 +1,11 @@
-const VoteResults = ({ winner }) => {
+import { useEmojiContext } from "../../../contexts/EmojiContext";
+
+const VoteResults = () => {
+    const { winner } = useEmojiContext();
+
+    if (!winner) {
+        return null;
+    }
     return (
         <div className="vote-results">
             <p className="vote-results__winner">
