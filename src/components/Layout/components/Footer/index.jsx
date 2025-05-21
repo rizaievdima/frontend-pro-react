@@ -1,4 +1,4 @@
-import { useThemeContext } from "../../contexts/ThemeContext";
+import { useThemeContext } from "../../../../contexts/ThemeContext";
 
 import styles from "./footer.module.css";
 

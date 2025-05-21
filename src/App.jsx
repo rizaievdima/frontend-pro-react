@@ -1,14 +1,22 @@
+import { Navigate, Routes, Route } from "react-router";
+
+import Layout from "./components/Layout";
 import Emoji from "./pages/emoji";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Contacts from "./pages/contacts";
+import About from "./pages/about";
+import Todos from "./pages/todos";
 
 function App() {
     return (
-        <>
-            <Header />
-            <Emoji />
-            <Footer />
-        </>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Emoji />} />
+                <Route path="contacts" element={<Contacts />} />
+                <Route path="about" element={<About />} />
+                <Route path="todos" element={<Todos />} />
+                <Route path="*" element={<Navigate to="/" />} />
+            </Route>
+        </Routes>
     );
 }
 

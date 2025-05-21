@@ -9,6 +9,15 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+div {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 25px;
+}
 .button {
     padding: 10px 20px;
     margin: 0 10px;
