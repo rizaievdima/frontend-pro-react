@@ -33,6 +33,14 @@ export default function Header() {
             >
                 About
             </NavLink>
+            <NavLink
+                className={({ isActive }) =>
+                    `${styles["header-link"]} ${isActive ? styles["active"] : ""}`
+                }
+                to="/counter-redux"
+            >
+                Counter
+            </NavLink>
 
             <NavLink
                 className={({ isActive }) =>
